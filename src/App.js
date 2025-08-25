@@ -17,6 +17,7 @@ const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__f
     appId: "1:341665681835:web:f5280c6bc62101b5e142ee",
   measurementId: "G-4DFCQXGWSX" // Replace with your Firebase App ID
 };
+const app = initializeApp(firebaseConfig);
 const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id'; // Default for local, or Canvas value
 const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null; // Null for local, or Canvas value
 
